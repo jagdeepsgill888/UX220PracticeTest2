@@ -2,10 +2,17 @@
 <html lang="en">
 <head>
     <script>
+        class Jag extends HTMLElement{
+            connectedCallback(){
+            this.innerHTML = "Jag was here!";
+         }
+        }
+
+        customElements.define("x-jag", Jag);
         </script>
 </head>
 <body>
     
 </body>
-
+    <x-jag></x-jag>
 </html>
